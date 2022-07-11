@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FpT-u0-tgp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -8,35 +8,111 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--화면 3-->
+        <scene sceneID="2gf-cu-VWT">
+            <objects>
+                <viewController id="dqJ-Yl-12G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hpK-Ee-SoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXc-eh-cJP">
+                                <rect key="frame" x="202" y="437.5" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MHG-xS-zOd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXc-eh-cJP" firstAttribute="centerY" secondItem="hpK-Ee-SoQ" secondAttribute="centerY" id="5oh-cF-VOH"/>
+                            <constraint firstItem="aXc-eh-cJP" firstAttribute="centerX" secondItem="hpK-Ee-SoQ" secondAttribute="centerX" id="SkH-mg-q72"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="화면 3" id="FZQ-ZL-jyn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6U-RM-zcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="291"/>
+        </scene>
+        <!--화면 2-->
+        <scene sceneID="uNM-4H-z0C">
+            <objects>
+                <viewController id="cy9-jH-ssW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFQ-Sq-Ry3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocb-ol-ONl">
+                                <rect key="frame" x="202" y="437.5" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="idl-S0-2DM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ocb-ol-ONl" firstAttribute="centerX" secondItem="uFQ-Sq-Ry3" secondAttribute="centerX" id="0PR-6U-vjl"/>
+                            <constraint firstItem="Ocb-ol-ONl" firstAttribute="centerY" secondItem="uFQ-Sq-Ry3" secondAttribute="centerY" id="9Hx-T4-9eV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="화면 2" id="KkX-mQ-xNy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDH-ca-Nne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1294.2028985507247" y="290.625"/>
+        </scene>
+        <!--Custom Tab BarVC-->
+        <scene sceneID="7ml-vp-1YD">
+            <objects>
+                <tabBarController id="FpT-u0-tgp" customClass="CustomTabBarVC" customModule="naverMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tkr-cu-AS8" customClass="TabBarVC" customModule="naverMap" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cy9-jH-ssW" kind="relationship" relationship="viewControllers" id="x7r-n9-g35"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jv1-jp-44Q"/>
+                        <segue destination="dqJ-Yl-12G" kind="relationship" relationship="viewControllers" id="E36-aP-4we"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJn-HP-JaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1293" y="-439"/>
+        </scene>
+        <!--지도-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="naverMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="naverMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7I-p2-bDI" customClass="NMFMapView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X7I-p2-bDI" secondAttribute="bottom" constant="100" id="1oJ-Qo-7Zg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X7I-p2-bDI" secondAttribute="bottom" id="3Rp-W5-LD8"/>
                             <constraint firstItem="X7I-p2-bDI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MYU-IK-d61"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X7I-p2-bDI" secondAttribute="trailing" id="XjU-3p-Lbc"/>
                             <constraint firstItem="X7I-p2-bDI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sQL-NH-wkP"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="지도" id="RbN-hB-FOP"/>
                     <connections>
                         <outlet property="mapView" destination="X7I-p2-bDI" id="yVG-mn-dhQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="24"/>
+            <point key="canvasLocation" x="-2275" y="291"/>
         </scene>
     </scenes>
     <resources>

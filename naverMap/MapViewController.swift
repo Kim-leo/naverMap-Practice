@@ -10,7 +10,7 @@ import NMapsMap
 
 
 
-class ViewController: UIViewController, NMFMapViewCameraDelegate {
+class MapViewController: UIViewController, NMFMapViewCameraDelegate {
     
     @IBOutlet weak var mapView: NMFMapView!
     

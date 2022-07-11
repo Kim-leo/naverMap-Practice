@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		7C4B0B7F287C8C66003A4FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B7E287C8C66003A4FE7 /* AppDelegate.swift */; };
 		7C4B0B81287C8C66003A4FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B80287C8C66003A4FE7 /* SceneDelegate.swift */; };
-		7C4B0B83287C8C66003A4FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B82287C8C66003A4FE7 /* ViewController.swift */; };
+		7C4B0B83287C8C66003A4FE7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B82287C8C66003A4FE7 /* MapViewController.swift */; };
 		7C4B0B86287C8C66003A4FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4B0B84287C8C66003A4FE7 /* Main.storyboard */; };
 		7C4B0B88287C8C6B003A4FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4B0B87287C8C6B003A4FE7 /* Assets.xcassets */; };
 		7C4B0B8B287C8C6B003A4FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4B0B89287C8C6B003A4FE7 /* LaunchScreen.storyboard */; };
+		7C4B0B93287C963B003A4FE7 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B92287C963B003A4FE7 /* secondViewController.swift */; };
+		7C4B0B95287C9645003A4FE7 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B94287C9645003A4FE7 /* thirdViewController.swift */; };
+		7C4B0B97287C9701003A4FE7 /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B96287C9701003A4FE7 /* CustomTabBarVC.swift */; };
+		7C4B0B99287C997A003A4FE7 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B0B98287C997A003A4FE7 /* TabBarVC.swift */; };
 		820DA0E7D74D611453DB768D /* Pods_naverMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAB809D47C96F855A2C85C5 /* Pods_naverMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +25,15 @@
 		7C4B0B7B287C8C66003A4FE7 /* naverMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naverMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4B0B7E287C8C66003A4FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C4B0B80287C8C66003A4FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C4B0B82287C8C66003A4FE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C4B0B82287C8C66003A4FE7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7C4B0B85287C8C66003A4FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C4B0B87287C8C6B003A4FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C4B0B8A287C8C6B003A4FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C4B0B8C287C8C6B003A4FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C4B0B92287C963B003A4FE7 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		7C4B0B94287C9645003A4FE7 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		7C4B0B96287C9701003A4FE7 /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
+		7C4B0B98287C997A003A4FE7 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		94867F3AD9B82C39A65AEA53 /* Pods-naverMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-naverMap.release.xcconfig"; path = "Target Support Files/Pods-naverMap/Pods-naverMap.release.xcconfig"; sourceTree = "<group>"; };
 		C6A139AE3FA550FB91708EEC /* Pods-naverMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-naverMap.debug.xcconfig"; path = "Target Support Files/Pods-naverMap/Pods-naverMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +73,11 @@
 			children = (
 				7C4B0B7E287C8C66003A4FE7 /* AppDelegate.swift */,
 				7C4B0B80287C8C66003A4FE7 /* SceneDelegate.swift */,
-				7C4B0B82287C8C66003A4FE7 /* ViewController.swift */,
+				7C4B0B82287C8C66003A4FE7 /* MapViewController.swift */,
+				7C4B0B92287C963B003A4FE7 /* secondViewController.swift */,
+				7C4B0B94287C9645003A4FE7 /* thirdViewController.swift */,
+				7C4B0B96287C9701003A4FE7 /* CustomTabBarVC.swift */,
+				7C4B0B98287C997A003A4FE7 /* TabBarVC.swift */,
 				7C4B0B84287C8C66003A4FE7 /* Main.storyboard */,
 				7C4B0B87287C8C6B003A4FE7 /* Assets.xcassets */,
 				7C4B0B89287C8C6B003A4FE7 /* LaunchScreen.storyboard */,
@@ -88,7 +100,6 @@
 				C6A139AE3FA550FB91708EEC /* Pods-naverMap.debug.xcconfig */,
 				94867F3AD9B82C39A65AEA53 /* Pods-naverMap.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,7 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C4B0B83287C8C66003A4FE7 /* ViewController.swift in Sources */,
+				7C4B0B99287C997A003A4FE7 /* TabBarVC.swift in Sources */,
+				7C4B0B93287C963B003A4FE7 /* secondViewController.swift in Sources */,
+				7C4B0B83287C8C66003A4FE7 /* MapViewController.swift in Sources */,
+				7C4B0B95287C9645003A4FE7 /* thirdViewController.swift in Sources */,
+				7C4B0B97287C9701003A4FE7 /* CustomTabBarVC.swift in Sources */,
 				7C4B0B7F287C8C66003A4FE7 /* AppDelegate.swift in Sources */,
 				7C4B0B81287C8C66003A4FE7 /* SceneDelegate.swift in Sources */,
 			);
