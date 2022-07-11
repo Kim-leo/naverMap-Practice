@@ -12,15 +12,16 @@ import NMapsMap
 
 class ViewController: UIViewController, NMFMapViewCameraDelegate {
     
+    @IBOutlet weak var mapView: NMFMapView!
+    
     let CurrentCoord = NMGLatLng(lat: 37.5670135, lng: 126.9783740)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let mapView = NMFMapView(frame: view.frame)
-        view.addSubview(mapView)
+        mapView.allowsZooming = true
         
-        mapView.addCameraDelegate(delegate: self)
+        
         
         
         
